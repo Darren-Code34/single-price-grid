@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: hsl(204, 43%, 93%);
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card{
+    margin: 40px 30px 40px 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000;
+    background: #fff;
+}
+
+.card-presentation{
+    padding: 30px 20px 30px 20px ;
+}
+
+.presentation-title{
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(42, 178, 175);
+    margin-bottom: 25px;
+}
+
+.presentation-subtitle{
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(192, 223, 52);
+    margin-bottom: 20px;
+}
+
+.presentation{
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(126, 128, 129);
+}
+
+.card-register{
+    background: rgb(17, 179, 173);
+    padding: 0 20px 30px 20px;
+    color: #fff;
+}
+
+.register-title{
+    font-weight: 700;
+    font-size: 19px;
+    color: #fff;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.register-price{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.register{
+    border:1px solid  transparent;
+    text-align: center;
+    border-radius: 6px;
+    background:rgb(192, 223, 52) ;
+    padding: 15px 90px 15px 90px;
+    margin-top: 30px;
+}
+
+.card-us{
+    background: rgba(18, 203, 196,1.0);
+    padding: 0 20px 30px 20px;
+    color: #fff;
+    
+}
+
+.us-title{
+    font-weight: 700;
+    font-size: 19px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.us-liste{
+    line-height: 25px;
+}
+
+.attribution{
+    text-align: center;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+@media only screen and (min-width: 850px){
+    .card{
+        display: grid;
+        grid-template-rows: 45% 55%;
+        grid-template-columns: 50% 50%;
+        width: 812px;
+        height: 606px;
+        margin: 80px auto;
+       
+    }
+
+    .card-presentation{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        
+    }
+
+    .card-register{
+        grid-row-start: 2;
+    }
+
+    .card-us{
+        grid-row-start: 2;
+        grid-column-start: 2;
+
+    }
+}
+
+
